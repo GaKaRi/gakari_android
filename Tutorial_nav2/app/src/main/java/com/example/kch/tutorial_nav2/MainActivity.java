@@ -1,5 +1,6 @@
 package com.example.kch.tutorial_nav2;
 
+import android.app.FragmentManager;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -20,8 +21,11 @@ public class MainActivity extends AppCompatActivity
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
@@ -80,13 +84,15 @@ public class MainActivity extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        if (id == R.id.nav_camera) {
-            // Handle the camera action
-        } else if (id == R.id.nav_gallery) {
+        FragmentManager manager = getFragmentManager();
 
-        } else if (id == R.id.nav_slideshow) {
+        //first layout 메뉴 버튼이 눌리면 실행됨
+        if (id == R.id.nav_first_layout) {
+            manager.beginTransaction().replace(R.id.content_main, new FirstLayout()).commit();
 
-        } else if (id == R.id.nav_manage) {
+        //first layout 메뉴 버튼이 눌리면 실행됨
+        } else if (id == R.id.nav_second_layout) {
+            manager.beginTransaction().replace(R.id.content_main, new SecondLayout()).commit();
 
         } else if (id == R.id.nav_share) {
 
