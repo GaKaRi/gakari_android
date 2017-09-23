@@ -22,12 +22,16 @@ public class MainActivity extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-
+        //툴바를 가져온후
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+        //setSupportActionBar() 메서드는 인자로 받은 툴바를 액티비티의 액션바로 대체하는 역할을 합니다. 기본으로 제공되는 액션바 외에 별도로 툴바를 사용하고 싶다면 이 메서드를 호출하지 않고 툴바만 단독으로 사용하는 것도 가능합니다.
 
 
+
+        //FloatingActionButton을 가져온 후
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
+        //리스너를 달아줍니다.
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -36,14 +40,19 @@ public class MainActivity extends AppCompatActivity
             }
         });
 
+        //DrawerLayout 먼저 지정해줍니다.
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+
+        //ActionBarDrawerToggle(Activity activity, DrawerLayout drawerLayout, int openDrawerContentDescRes, int closeDrawerContentDescRes)
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
                 this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
         drawer.setDrawerListener(toggle);
+
         toggle.syncState();
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+        //네비게이션뷰 클릭 시 onNavigationItemSelected로 이동합니다.
     }
 
     @Override
@@ -88,10 +97,12 @@ public class MainActivity extends AppCompatActivity
 
         //first layout 메뉴 버튼이 눌리면 실행됨
         if (id == R.id.nav_first_layout) {
+            //content_main을 FirstLayout으로 대체합니다
             manager.beginTransaction().replace(R.id.content_main, new FirstLayout()).commit();
 
         //first layout 메뉴 버튼이 눌리면 실행됨
         } else if (id == R.id.nav_second_layout) {
+            //content_main을 SecondLayout으로 대체합니다
             manager.beginTransaction().replace(R.id.content_main, new SecondLayout()).commit();
 
         } else if (id == R.id.nav_share) {
@@ -101,7 +112,7 @@ public class MainActivity extends AppCompatActivity
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
-        drawer.closeDrawer(GravityCompat.START);
+        drawer.closeDrawer(GravityCompat.START);//Drawer를 닫음
         return true;
     }
 }

@@ -17,6 +17,8 @@ public class FirstLayout extends Fragment {
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState) {
+
+        //inflate메소드는 XML데이터를 가져와서 실제 View객체로 만드는 작업을 합니다.
         v = inflater.inflate(R.layout.first_layout, container, false);
 
         return v;
