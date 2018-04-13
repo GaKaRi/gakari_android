@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.kch.proj_manager_v8.ManagementActivity">
+
+   <LinearLayout
+       android:layout_width="368dp"
+       android:layout_height="495dp"
+       android:orientation="vertical"
+       android:background="#d1d1d1"
+       tools:layout_editor_absoluteY="8dp"
+       tools:layout_editor_absoluteX="8dp">
+
+       <EditText
+           android:id="@+id/search"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:hint="search"
+
+           />
+
+       <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/listView"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            android:dividerHeight="10dp"
+            android:divider="#d1d1d1">
+        </ListView>
+</LinearLayout>
+</android.support.constraint.ConstraintLayout>
