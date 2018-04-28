@@ -22,18 +22,15 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         TextView idText = (TextView)findViewById(R.id.idText);
-        TextView passwordText = (TextView)findViewById(R.id.passwordText);
         TextView welcome = (TextView)findViewById(R.id.WelcomeMessage);
         Button managementButton = (Button)findViewById(R.id.manageButton);
         final Button registerbtn = (Button)findViewById(R.id.registerbtn);//추가함
 
         Intent intent = getIntent();
         String userID = intent.getStringExtra("userID");
-        String userPassword = intent.getStringExtra("userPassword");
         String msg = "Welcome" + userID;
 
         idText.setText(userID);
-        passwordText.setText(userPassword);
         welcome.setText(msg);
 
 
