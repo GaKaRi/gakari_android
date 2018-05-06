@@ -1,4 +1,4 @@
-package com.example.kch.registration_v2;
+package com.example.kch.registration_v3;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
