@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="major">
+        <item>정보통신공학</item>
+        <item>기계공학</item>
+        <item>화학공학과</item>
+    </string-array>
+
+
+</resources>

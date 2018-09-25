@@ -1,4 +1,4 @@
-package com.example.kch.registration_v6;
+package com.example.kch.registration_v7;
 
 import com.android.volley.AuthFailureError;
 import com.android.volley.Response;

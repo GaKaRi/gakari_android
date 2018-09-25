@@ -1,4 +1,4 @@
-package com.example.kch.registration_v6;
+package com.example.kch.registration_v7;
 
 import android.support.annotation.IdRes;
 import android.support.v7.app.AlertDialog;
