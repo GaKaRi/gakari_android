@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="major">
+        <item>정보통신공학</item>
+        <item>기계공학</item>
+        <item>화학공학과</item>
+    </string-array>
+    <string-array name="term">
+        <item>1학기</item>
+        <item>여름학기</item>
+        <item>2학기</item>
+        <item>계절학기</item>
+    </string-array>
+
+    <string-array name="graduateArea">
+         <item>대학원 전공과목</item>
+    </string-array>
+
+   <string-array name="universityArea">
+        <item>학부 전공과목</item>
+        <item>학부 교양과목</item>
+    </string-array>
+    <string-array name="graduateMajor">
+        <item>대학원 전공1</item>
+        <item>대학원 전공2</item>
+        <item>대학원 전공3</item>
+    </string-array>
+    <string-array name="universityRefinementMajor">
+        <item>학부 교양1</item>
+        <item>학부 교양2</item>
+        <item>학부 교양3</item>
+        <item>학부 교양4</item>
+    </string-array>
+    <string-array name="universityMajor">
+        <item>학부 전공1</item>
+        <item>학부 전공2</item>
+        <item>학부 전공3</item>
+        <item>학부 전공4</item>
+    </string-array>
+    <string-array name="year">
+        <item>2018년도</item>
+        <item>2019년도</item>
+        <item>2020년도</item>
+        <item>2021년도</item>
+        <item>2022년도</item>
+        <item>2023년도</item>
+        <item>2024년도</item>
+        <item>2025년도</item>
+        <item>2026년도</item>
+    </string-array>
+</resources>
